@@ -54,7 +54,28 @@
                 <button class="button" data-modal-open>Заказать услугу</button>
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
-                        <p></p>
+                        <form class="form-modal">
+                            <h2 class="title-modal">Оставьте свои данные, мы вам перезвоним</h2>
+                            <div class="form-groop">
+                                <label for="name">Имя</label>
+                                <input type="name" name="name" id="name">
+                            </div>
+                            <div class="form-groop">
+                                <label for="phone">Телефон</label>
+                                <input type="text" name="phone" id="phone">
+                            </div>
+                            <div class="form-groop">
+                                <label for="mail">Почта</label>
+                                <input type="text" name="mail" id="mail">
+                            </div>
+                            <div class="form-groop">
+                                <label for="comment">Комментарий</label>
+                                <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
+                            </div>
+                            <input type="checkbox" name="policy" id="policy">
+                            <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                            <button type="submit" class="button">Отправить</button>
+                        </form>
                         <button class="button-close" data-modal-close><span class="button-span">x</span></button>
                     </div>
                 </div>
@@ -387,13 +408,22 @@
                     </li>
                 </ul>
             </div>
+            <form class="form">
+                <h2 class="form-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+                <div class="form-flex">
+                    <div class="form-field">
+                        <label for="mail"></label>
+                        <input type="mail" name="mail" id="mail" placeholder="E-mail">
+                    </div>
+                    <button type="submit" class="form-button"><span class="form-span">Подписаться</span>
+                        <svg class="form-icon">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
         </div>
-        <form action="">
-            <label for=""></label>
-            <input type="text">
-
-            <button type="submit"></button>
-        </form>
+        
     </footer> 
     <script src="./js/modal.js"></script> 
 </body>
