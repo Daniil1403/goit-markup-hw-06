@@ -382,6 +382,7 @@ textarea {
 }
 
 .form-groop textarea {
+    padding: 12px 16px;
     margin: 0;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -389,7 +390,6 @@ textarea {
 }
 
 .form-groop textarea::placeholder {
-    padding: 12px 16px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -399,16 +399,33 @@ textarea {
 
 .person-svg {
     position: absolute;
-    bottom: 14px;
-    left: 15px;
-    width: 12px;
-    height: 12px;
+    bottom: 11px;
+    left: 12px;
+    width: 18px;
+    height: 18px;
     fill: var(--title-text-color);
 }
 
 .agree {
+    display: flex;
     margin-top: 17px;
+    margin-left: 11px;
 }
+
+.checkbox {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.icon-check-svg {
+    position: absolute;
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+}
+
 
 .form-modal .button {
     margin-top: 30px;
@@ -416,7 +433,6 @@ textarea {
 }
 
 /* Section */
-
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -926,7 +942,7 @@ br {
 }
 
 .form-field input {
-    padding: 15px 295px 15px 16px;
+    padding: 15px 0px 15px 16px;
     width: 100%;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -974,6 +990,7 @@ br {
     display: flex;
     width: 24px;
     height: 24px;
+    fill: var(--title-white-color);
 }
 
 /* Styles.css for portfolio.html */
