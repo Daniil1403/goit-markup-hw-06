@@ -54,32 +54,42 @@
                 <button class="button" data-modal-open>Заказать услугу</button>
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
-                        <form class="form-modal">
-                            <h2 class="title-modal">Оставьте свои данные, мы вам перезвоним</h2>
-                            <div class="form-groop">
-                                <label for="name">Имя</label>
-                                <input type="name" name="name" id="name">
-                            </div>
-                            <div class="form-groop">
-                                <label for="phone">Телефон</label>
-                                <input type="text" name="phone" id="phone">
-                            </div>
-                            <div class="form-groop">
-                                <label for="mail">Почта</label>
-                                <input type="text" name="mail" id="mail">
-                            </div>
-                            <div class="form-groop">
-                                <label for="comment">Комментарий</label>
-                                <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
-                            </div>
-                            <input type="checkbox" name="policy" id="policy">
-                            <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-                            <button type="submit" class="button">Отправить</button>
-                        </form>
+                            <form class="form-modal">
+                                <h2 class="title-modal">Оставьте свои данные, мы вам перезвоним</h2>
+                                <div class="form-groop">
+                                    <label for="name">Имя</label>
+                                    <input type="name" name="name" id="name">
+                                    <svg class="person-svg">
+                                        <use href="./images/icons.svg#person"></use>
+                                    </svg>
+                                </div>
+                                <div class="form-groop">
+                                    <label for="phone">Телефон</label>
+                                    <input type="text" name="phone" id="phone">
+                                    <svg class="person-svg">
+                                        <use href="./images/icons.svg#phone"></use>
+                                    </svg>
+                                </div>
+                                <div class="form-groop">
+                                    <label for="mail">Почта</label>
+                                    <input type="text" name="mail" id="mail">
+                                    <svg class="person-svg">
+                                        <use href="./images/icons.svg#email"></use>
+                                    </svg>
+                                </div>
+                                <div class="form-groop">
+                                    <label for="comment">Комментарий</label>
+                                    <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
+                                </div>
+                                <div class="agree">
+                                    <input type="checkbox" name="policy" id="policy">
+                                    <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                                </div>
+                                <button type="submit" class="button">Отправить</button>
+                            </form>
                         <button class="button-close" data-modal-close><span class="button-span">x</span></button>
                     </div>
-                </div>
-                
+                </div> 
             </div>
         </div>
         <!--Особенности-->
@@ -423,7 +433,6 @@
                 </div>
             </form>
         </div>
-        
     </footer> 
     <script src="./js/modal.js"></script> 
 </body>
