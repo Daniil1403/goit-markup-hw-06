@@ -82,8 +82,11 @@
                                     <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
                                 </div>
                                 
-                                <label for="policy" class="agree">Соглашаюсь с рассылкой и принимаю Условия договора
-                                    <input type="checkbox" name="policy" id="policy">
+                                <label class="agree">
+                                    <input class="agree-input" type="checkbox" name="policy">
+                                    <span class="agree-lable">
+                                        Соглашаюсь с рассылкой и принимаю <a href="" class="agree-link">Условия договора</a> 
+                                    </span>
                                     <svg class="icon-check-svg">
                                         <use href="./images/icons.svg#icon-check"></use>
                                     </svg>
@@ -91,7 +94,11 @@
                                     
                                 <button type="submit" class="button">Отправить</button>
                             </form>
-                        <button class="button-close" data-modal-close><span class="button-span">x</span></button>
+                        <button class="button-close" data-modal-close>
+                            <svg class="button-span">
+                                <use href="./images/icons.svg#close"></use>
+                            </svg>
+                        </button>
                     </div>
                 </div> 
             </div>

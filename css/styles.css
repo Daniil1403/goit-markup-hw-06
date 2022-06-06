@@ -308,6 +308,8 @@ body {
 }
 
 .button-close {
+    position: relative;
+    display: block;
     box-sizing: border-box;
     position: absolute;
     width: 30px;
@@ -322,10 +324,20 @@ body {
 }
 
 .button-span {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    transition: opacity 250ms var(--timing-function);
+
     width: 18px;
     height: 18px;
-    color: #000000;
-    text-align: center;
+}
+
+.button-close:focus > .button-span {
+    fill: var(--accent-color);
 }
 
 /* Form */
@@ -407,25 +419,64 @@ textarea {
 }
 
 .agree {
-    display: flex;
+    position: relative;
+    display: block;
     margin-top: 17px;
     margin-left: 11px;
 }
 
-.checkbox {
+.agree-input {
     position: absolute;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
+    width: 100%;
+    margin: 0;
+    font: inherit;
+}
+
+.agree:focus-within > .icon-check-svg {
+    background-color: var(--accent-color);
+    border: 2px solid transparent;
+    border-radius: 4px;
+}
+
+.agree-lable {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+
+    transition: color 250ms var(--timing-function);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--primery-text-color); 
+}
+
+.agree-link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: var(--accent-color);
 }
 
 .icon-check-svg {
     position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+
+    transition: color 250ms var(--timing-function);
+
     display: inline-block;
     width: 16px;
     height: 15px;
+    border: 2px solid var(--title-text-color);
+    border-radius: 4px;
 }
-
 
 .form-modal .button {
     margin-top: 30px;
