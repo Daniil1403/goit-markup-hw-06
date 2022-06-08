@@ -321,6 +321,7 @@ body {
     border-radius: 50%;
     background: var(--title-white-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
+    outline: none;
 }
 
 .button-span {
@@ -334,6 +335,11 @@ body {
 
     width: 18px;
     height: 18px;
+}
+
+.button-close:focus {
+    border: 1px solid #2196F3;
+    border-radius: 50%;
 }
 
 .button-close:focus > .button-span {
@@ -384,6 +390,12 @@ body {
     height: 40px; 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    outline: none;
+}
+
+.form-groop input:focus {
+    border: 1px solid #2196F3;
+    border-radius: 4px;
 }
 
 .form-groop input:focus + .person-svg {
@@ -399,6 +411,12 @@ textarea {
     margin: 0;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+}
+
+.form-groop textarea:focus {
+    border: 1px solid #2196F3;
     border-radius: 4px;
 }
 
@@ -421,14 +439,13 @@ textarea {
 
 .agree {
     position: relative;
-    display: block;
+    display: flex;
     margin-top: 27px;
     margin-left: 11px;
 }
 
 .agree-input {
     position: absolute;
-    display: block;
     appearance: none;
     width: 100%;
     margin: 0;
