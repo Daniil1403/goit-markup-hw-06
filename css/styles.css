@@ -308,14 +308,13 @@ body {
 }
 
 .button-close {
-    position: relative;
-    display: block;
+    position: absolute;
     box-sizing: border-box;
     position: absolute;
     width: 30px;
     height: 30px;
-    left: 492px;
-    top: 6px;
+    right: 10px;
+    top: 10px;
     align-items: center;
     text-align: center;
     border-radius: 50%;
